@@ -1,0 +1,20 @@
+# Please refer https://aka.ms/HTTPSinContainer on how to setup an https developer certificate for your ASP .NET Core service.
+version: '3.4'
+
+services:
+  tapi2:
+    image: tapi2
+    build:
+      context: .
+      dockerfile: TAPI2/Dockerfile
+    ports:
+      - 5010:5010
+      - 5011:5011         
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:5011;http://+:5010
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=password
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/aspnet/https/aspnetapp.pfx     
+    volumes:
+      - ~/.aspnet/https:/aspnet/https/:ro
+      - ~/.vsdbg:/remote_debugger:rw
