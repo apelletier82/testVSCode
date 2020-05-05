@@ -7,3 +7,4 @@ TAPI2/obj/Debug/netcoreapp3.1/TAPI2.csprojAssemblyReference.cache
 TAPI2UnitTest/obj/Debug/netcoreapp3.1/TestWebApi2.csprojAssemblyReference.cache
 TAPI2/obj/Debug/netcoreapp3.1/TAPI2.csprojAssemblyReference.cache
 TAPI2UnitTest/obj/Debug/netcoreapp3.1/TestWebApi2.csprojAssemblyReference.cache
+*.cache
