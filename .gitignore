@@ -1,5 +1,5 @@
 **/obj/
 **/bin/
-TAPI2/.directory
+.directory
 TAPI2/appsettings.Development.json
 *.cache
