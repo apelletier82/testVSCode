@@ -1,6 +1,3 @@
-using System.Security.Principal;
-using System.Security.AccessControl;
-using System.Reflection;
 using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -16,7 +13,6 @@ using System.Net;
 using Microsoft.AspNetCore.Diagnostics;
 using TAPI2.Models;
 using Newtonsoft.Json;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using TAPI2.Services.Abstract;
 
